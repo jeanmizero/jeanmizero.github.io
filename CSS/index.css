@@ -1,3 +1,8 @@
+body {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .nav-content {
     display: inline-block;
     vertical-align: top;
@@ -38,9 +43,57 @@
 
 .herolmg {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .child-2 {
-    margin-left: 400px;
-    margin-top: 100px;
+    /* display: flex;
+    margin-left: 400px; */
+    margin-top: 160px;
+}
+
+
+/* Week 18 */
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.skill-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexChild {
+    width: 33%;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 10px;
+    /*  */
+}
+
+@media only screen and (max-width:600px) {
+    .flexContainer {
+        display: block;
+    }
+    .herolmg {
+        display: block;
+    }
 }
